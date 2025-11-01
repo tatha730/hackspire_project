@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support Chatbot - Voice Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h1>Mental Health Support Chatbot</h1>
+            <p class="subtitle">You can type or speak to me</p>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm here to support you. You can talk to me by typing or clicking the microphone button to speak.
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Type your message here or use voice input..."
+                    rows="1"
+                ></textarea>
+                <button id="voiceBtn" class="voice-btn" title="Click to speak">
+                    <svg class="mic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14C13.1 14 14 13.1 14 12V6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6V12C10 13.1 10.9 14 12 14Z" fill="currentColor"/>
+                        <path d="M19 12V13C19 16.9 15.9 20 12 20C8.1 20 5 16.9 5 13V12H7V13C7 15.8 9.2 18 12 18C14.8 18 17 15.8 17 13V12H19Z" fill="currentColor"/>
+                        <path d="M11 22H13V24H11V22Z" fill="currentColor"/>
+                        <path d="M12 24C11.4 24 11 23.6 11 23V21H13V23C13 23.6 12.6 24 12 24Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button id="sendBtn" class="send-btn" title="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="voice-status" id="voiceStatus"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
