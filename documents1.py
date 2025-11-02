@@ -394,7 +394,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-groq_api_key = "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"
+groq_api_key = "groq_api_key"
 
 llm = ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-8b-instant",temperature=0.1,max_tokens=1024)
 def rag_simple(query,retriever,llm,top_k=3):
